@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympic Symbol</title>
+    <style>
+        h1{
+            color: red; 
+            font-size: 40px;
+        }
+        body {
+            background: url("bg1.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        #canvas{
+            border-width: 10px;
+            background-color: white;
+            border-style: ridge;
+        }
+        span{
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+		<h1>Olympic Symbol</h1><br><br>
+		<canvas style="width: 1100px;height: 600px;" id="canvas"></canvas><br>
+	</center>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.strokeStyle = "grey";
+        ctx.lineWidth = 4;
+        ctx.rect(38, 40, 230, 80);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle = "blue";
+        ctx.lineWidth = 4;
+        ctx.arc(80, 70, 20, 0, 2*Math.PI);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle = "yellow";
+        ctx.lineWidth = 4;
+        ctx.arc(105, 85, 20, 0, 2*Math.PI);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 4;
+        ctx.arc(135, 70, 20, 0, 2*Math.PI);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle = "green";
+        ctx.lineWidth = 4;
+        ctx.arc(160, 85, 20, 0, 2*Math.PI);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.strokeStyle = "red";
+        ctx.lineWidth = 4;
+        ctx.arc(185, 70, 20, 0, 2*Math.PI);
+        ctx.stroke();
+    </script>
+</body>
+</html>
